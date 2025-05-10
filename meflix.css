@@ -327,6 +327,37 @@ body {
   text-decoration: underline;
 }
 
+.frecuentes {
+  padding: 1rem;
+  width: 100%;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+}
+
+.frecuentes details {
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, rgb(194, 191, 191), rgb(223, 218, 218));
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.frecuentes summary {
+  font-weight: bold;
+  font-size: 1rem;
+  outline: none;
+  color: #000;
+}
+
+.frecuentes p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #000;
+}
+
 @media (max-width: 768px) {
   .footer-links {
     flex-direction: column;
