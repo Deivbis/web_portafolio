@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="icon" href="imagenes/maletin.png" type="image/png">
+    <title>Formulario Basico</title>
+</head>
+<body>
+    <form class="contenedor" action="/procesar" method="post">
+        <h1>Formulario Basico</h1>
+
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" minlength="15" required placeholder="Ingrese su nombre completo" title="Aqui va u nombre completo"/><br>
+        <br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingrese su Email" title="Aqui va su email"/><br>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" requiredminlength="8" maxlength="12" required placeholder="Ingrese su comtraseña debe tener al menos una: Mayuscula,numero y simbolo" title="Aqui va su contraseña debe tener:Mayuscula,numero y simbolo" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$"/><br>
+        <br>
+        <p title="Elija su Genero">Género:</p>
+        <label><input type="radio" name="genero" value="masculino" title="Masculino"/> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino" title="Femenino"/> Femenino</label><br>
+        <br>
+        <p>Selecciona tus intereses:</p>
+        <label><input type="checkbox" id="deporte" name="intereses[]" value="Deporte"> Deporte</label>
+        <label><input type="checkbox" id="musica" name="intereses[]" value="Música"> Música</label>
+        <label><input type="checkbox" id="cine" name="intereses[]" value="Cine"> Cine</label>
+        <label><input type="checkbox" id="lectura" name="intereses[]" value="Lectura"> Lectura</label>
+        <label><input type="checkbox" id="viajes" name="intereses[]" value="Viajes"> Viajes</label><br>
+        <br>
+        <label for="pais" title="Elije tu pais" >Pais:</label>
+        <select id="pais" name="pais" required>
+            <option value="seleccionar">Seleccionar</option>
+            <option value="mexico">Mexico</option>
+            <option value="españa">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+        </select><br>
+        <br>
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" required placeholder="Ingrese una observacion" title="Aqui deje una observacion"></textarea><br>
+        <br>
+        <input class="boton" type="submit" value="Enviar" />
+    </form>
+    
+</body>
+</html>
